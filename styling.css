@@ -1,0 +1,83 @@
+/* Css resetting*/
+body, ul, li, h1, h2, a{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+/*header*/
+header h1{
+    color: blueviolet;
+    border: 8px solid ;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+header{
+    background-color: #03206e;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+/* Navbar */
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    width: 50%;
+    display: inline-block;
+    position: center;
+    text-align: sticky;
+}
+nav{
+    background-color: rgb(0, 102, 255);
+    padding: 1px;
+}
+nav li a{
+    text-decoration: none;
+    color: rgba(0, 255, 255, 0.767);
+    position: sticky;
+    z-index: 20;
+}
+    h2{
+       text-align: center;
+       color: rgb(2, 1, 1);
+       font-size: 100px;
+    }
+    .hemsida{
+        text-align: center;
+        color: rgb(14, 12, 13);
+        position: relative; top: 90px;
+        font-weight: bold;
+    }
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+    }
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+    @media (max-width: 1600px) {
+        .navbar.responsive {position: relative;}
+        .toggle-button {
+            display: flex;
+        }
+        .navbar-links {
+            display: none;
+        }
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+ 
